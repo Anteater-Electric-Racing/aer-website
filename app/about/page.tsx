@@ -8,7 +8,7 @@ export default function AboutPage() {
       <Hero
         title="About UCI Formula SAE"
         subtitle="Driving the Future of Electric Racing"
-        backgroundImage="/images/socalshootout_lonecar.jpg"
+        backgroundImage="/images/staring_crop.jpg"
       />
 
       {/* Mission Section */}

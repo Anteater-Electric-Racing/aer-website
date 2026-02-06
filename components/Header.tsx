@@ -23,10 +23,11 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full bg-vintage-navy shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
-         
+          
+          {/* LOGO */}
           <Link href="/" className="relative h-12 w-48 transition-opacity hover:opacity-90">
              <Image 
-               src="/logo.png"
+               src="/logo.png" 
                alt="Anteater Electric Racing"
                fill
                className="object-contain object-left"
@@ -48,12 +49,6 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
-            <Link
-              href="/sponsors"
-              className="bg-vintage-orange text-white px-5 py-2 text-sm font-bold uppercase tracking-wider rounded hover:bg-white hover:text-vintage-navy transition-all"
-            >
-              Donate
-            </Link>
           </nav>
 
           {/* MOBILE MENU BUTTON */}
@@ -83,13 +78,6 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
-            <Link
-              href="/sponsors"
-              onClick={() => setIsOpen(false)}
-              className="bg-vintage-orange text-center text-white px-5 py-3 text-lg font-bold uppercase tracking-wider rounded"
-            >
-              Donate
-            </Link>
           </div>
         </div>
       )}

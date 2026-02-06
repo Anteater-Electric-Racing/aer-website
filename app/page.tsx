@@ -19,7 +19,7 @@ export default function HomePage() {
             Innovate. Engineer. Compete.
           </h2>
           <p className="text-lg text-gray-600">
-            We are UCI Anteater Electric, pushing the limits of electric vehicle performance.
+            We are UCI Anteater Electric Racing, pushing the limits of electric vehicles.
           </p>
         </div>
 

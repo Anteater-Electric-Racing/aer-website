@@ -1,4 +1,4 @@
-import type { Config } from "next";
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   darkMode: ["class"],
@@ -18,7 +18,6 @@ const config: Config = {
     },
     extend: {
       colors: {
-        // Your custom vintage theme
         vintage: {
           white: "#F5F5F0",    // Off-white/Cream
           navy: "#0D2544",     // Deep Navy
@@ -27,7 +26,6 @@ const config: Config = {
           yellow: "#F3C523",   // Gold/Yellow
           lightgray: "#E5E5E5",
         },
-        // ... keep standard shadcn variables if you want them
       },
     },
   },

@@ -225,7 +225,7 @@ export const SUBTEAMS = [
       { 
         name: "Karan Thakkar", 
         role: "Embedded Lead - Firmware", 
-        image: "/headshots/karan_thakkar.jfif", 
+        image: "/headshots/karan_thakkar.jpg", 
         linkedin: "https://www.linkedin.com/in/ksthakkar/" 
       },
       { 
@@ -247,8 +247,8 @@ export const SUBTEAMS = [
       { 
         name: "Lorelei Hobbis", 
         role: "Ergonomics Lead", 
-        image: "", // Placeholder
-        linkedin: "https://www.linkedin.com/in/johndoe" 
+        image: "",
+        linkedin: "" 
       },
       { 
         name: "Meera Sambhwani", 

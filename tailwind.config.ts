@@ -20,7 +20,7 @@ const config: Config = {
       colors: {
         vintage: {
           white: "#F5F5F0",    // Off-white/Cream
-          navy: "#0D2544",     // Deep Navy
+          navy: "#0C2344",     // Deep Navy
           orange: "#E88D14",   // Burnt Orange
           red: "#C23B22",      // Brick Red (for hovers)
           yellow: "#F3C523",   // Gold/Yellow

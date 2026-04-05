@@ -122,12 +122,6 @@ export const SUBTEAMS = [
         image: "/headshots/camryn_wright.jpg",
         linkedin: "http://www.linkedin.com/in/camryn-wright/"
       },
-      { 
-        name: "Natalie Perrochon", 
-        role: "Member", 
-        image: "/headshots/natalie_perrochon.png",
-        linkedin: "" 
-      },
     ]
   },
   {

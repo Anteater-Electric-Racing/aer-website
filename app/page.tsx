@@ -7,7 +7,7 @@ import { CURRENT_SPONSORS } from "@/lib/data";
 export default function HomePage() {
   return (
     <main className="flex flex-col min-h-screen bg-vintage-white selection:bg-vintage-orange selection:text-white">
-      
+
       {/* 1. HERO SECTION */}
       <section className="relative h-[calc(100vh-5rem)] min-h-[600px] flex items-end pb-12 overflow-hidden">
         <div className="absolute inset-0 z-0">

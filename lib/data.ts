@@ -91,6 +91,7 @@ export const CURRENT_SPONSORS = [
   { name: "Parker", tier: "Platinum", logo: "/sponsor-logos/parkerhannifin_logo.png" },
   { name: "Airtech", tier: "Platinum", logo: "/sponsor-logos/airtech_logo.jpg" },
   { name: "Composites One", tier: "Platinum", logo: "/sponsor-logos/compositesone_logo.png" },
+  { name: "Curbell Plastics", tier: "Platinum", logo: "/sponsor-logos/curbell_logo.png" },
   { name: "Evonik", tier: "Gold", logo: "/sponsor-logos/evonik_logo.png" },
   { name: "PEC Tools", tier: "Silver", logo: "/sponsor-logos/pectools_logo.jpeg" },
   { name: "Osh Cut", tier: "Silver", logo: "/sponsor-logos/oshcut_logo.png" },

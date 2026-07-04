@@ -23,16 +23,18 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full bg-vintage-navy shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
-          
           {/* LOGO */}
-          <Link href="/" className="relative h-12 w-48 transition-opacity hover:opacity-90">
-             <Image 
-               src="/logo.png" 
-               alt="Anteater Electric Racing"
-               fill
-               className="object-contain object-left"
-               priority
-             />
+          <Link
+            href="/"
+            className="relative h-12 w-48 transition-opacity hover:opacity-90"
+          >
+            <Image
+              src="/logo.png"
+              alt="Anteater Electric Racing"
+              fill
+              className="object-contain object-left"
+              priority
+            />
           </Link>
 
           {/* DESKTOP NAV */}
@@ -43,7 +45,7 @@ export function Header() {
                 href={item.href}
                 className={cn(
                   "text-sm font-bold uppercase tracking-widest transition-colors hover:text-vintage-yellow",
-                  pathname === item.href ? "text-vintage-yellow" : "text-white"
+                  pathname === item.href ? "text-vintage-yellow" : "text-white",
                 )}
               >
                 {item.name}
@@ -72,7 +74,7 @@ export function Header() {
                 onClick={() => setIsOpen(false)}
                 className={cn(
                   "text-lg font-bold uppercase tracking-widest px-4 py-2 rounded-md hover:bg-white/10",
-                  pathname === item.href ? "text-vintage-yellow" : "text-white"
+                  pathname === item.href ? "text-vintage-yellow" : "text-white",
                 )}
               >
                 {item.name}

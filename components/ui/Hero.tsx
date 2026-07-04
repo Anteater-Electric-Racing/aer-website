@@ -7,11 +7,11 @@ interface HeroProps {
   overlayOpacity?: number;
 }
 
-export function Hero({ 
-  title, 
-  subtitle, 
-  backgroundImage, 
-  overlayOpacity = 30
+export function Hero({
+  title,
+  subtitle,
+  backgroundImage,
+  overlayOpacity = 30,
 }: HeroProps) {
   return (
     <section className="relative h-[50vh] min-h-[400px] w-full bg-black overflow-hidden">
@@ -23,11 +23,11 @@ export function Hero({
         className="object-cover opacity-70"
         priority
       />
-      
+
       {/* Dark Overlay */}
-      <div 
-        className="absolute inset-0 bg-black" 
-        style={{ opacity: overlayOpacity / 100 }} 
+      <div
+        className="absolute inset-0 bg-black"
+        style={{ opacity: overlayOpacity / 100 }}
       />
 
       {/* Content */}
@@ -37,9 +37,7 @@ export function Hero({
             {title}
           </h1>
           {subtitle && (
-            <p className="text-xl md:text-2xl font-light">
-              {subtitle}
-            </p>
+            <p className="text-xl md:text-2xl font-light">{subtitle}</p>
           )}
         </div>
       </div>

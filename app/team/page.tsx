@@ -21,12 +21,12 @@ export default function TeamPage() {
 
           return (
             <section key={subteam.id} id={subteam.id} className="scroll-mt-24">
-              
-              <div className={cn(
-                "flex flex-col gap-12 items-center mb-12",
-                isEven ? "lg:flex-row" : "lg:flex-row-reverse"
-              )}>
-                
+              <div
+                className={cn(
+                  "flex flex-col gap-12 items-center mb-12",
+                  isEven ? "lg:flex-row" : "lg:flex-row-reverse",
+                )}
+              >
                 <div className="w-full lg:w-1/2">
                   <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white transform hover:scale-[1.01] transition-transform">
                     <Image
@@ -52,14 +52,16 @@ export default function TeamPage() {
                       {subteam.name}
                     </h2>
                   </div>
-                  
+
                   <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-vintage-orange pl-6">
                     {subteam.description}
                   </p>
 
                   <div className="flex items-center gap-2 text-vintage-orange font-bold pt-2">
                     <subteam.icon className="w-6 h-6" />
-                    <span className="uppercase tracking-wider text-sm">Specialized Discipline</span>
+                    <span className="uppercase tracking-wider text-sm">
+                      Specialized Discipline
+                    </span>
                   </div>
                 </div>
               </div>
@@ -69,11 +71,14 @@ export default function TeamPage() {
                   <span className="w-2 h-8 bg-vintage-orange rounded-full"></span>
                   {subteam.name} Members
                 </h3>
-                
+
                 {subteam.members && subteam.members.length > 0 ? (
                   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
                     {subteam.members.map((member) => (
-                      <div key={member.name} className="group flex flex-col items-center">
+                      <div
+                        key={member.name}
+                        className="group flex flex-col items-center"
+                      >
                         <div className="relative w-36 h-36 mb-4 rounded-full overflow-hidden border-4 border-vintage-lightgray group-hover:border-vintage-orange transition-colors shadow-sm">
                           {member.image ? (
                             <Image
@@ -99,14 +104,19 @@ export default function TeamPage() {
                   </div>
                 ) : (
                   <div className="text-center py-8 bg-vintage-lightgray/30 rounded-lg border border-dashed border-gray-300">
-                    <p className="text-gray-500 mb-4">Member roster coming soon.</p>
-                    <Link href="/contact" className="inline-flex items-center text-vintage-orange font-bold hover:underline">
-                      Apply to join this subteam <ArrowRight className="w-4 h-4 ml-1" />
+                    <p className="text-gray-500 mb-4">
+                      Member roster coming soon.
+                    </p>
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center text-vintage-orange font-bold hover:underline"
+                    >
+                      Apply to join this subteam{" "}
+                      <ArrowRight className="w-4 h-4 ml-1" />
                     </Link>
                   </div>
                 )}
               </div>
-
             </section>
           );
         })}

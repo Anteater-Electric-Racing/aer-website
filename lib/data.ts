@@ -154,6 +154,11 @@ export const CURRENT_SPONSORS = [
     tier: "Partner",
     logo: "/sponsor-logos/performancecomposites_logo.png",
   },
+    {
+    name: "Mercury",
+    tier: "Partner",
+    logo: "/sponsor-logos/Mercury_Logo_FullColor_CMYK.png",
+  },
 ];
 
 // =========================================

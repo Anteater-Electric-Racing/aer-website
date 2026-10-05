@@ -193,20 +193,20 @@ export const SUBTEAMS = [
     icon: Wind,
     members: [
       {
-        name: "Alexander Sadigursky",
+        name: "Christian Klenz",
         role: "Aerodynamics Lead",
         image: "/headshots/alexander_sadigursky.jpg",
         linkedin: "https://www.linkedin.com/in/sadigursky/",
       },
       {
         name: "Dylan Richcreek",
-        role: "Aerodynamics Co-Lead",
+        role: "Aerodynamics Lead",
         image: "/headshots/dylan_gene_richcreek.jpg",
         linkedin: "https://www.linkedin.com/in/dylan-richcreek-3a40062a6/",
       },
       {
-        name: "Manav Anand",
-        role: "Senior Aerobody Engineer",
+        name: "Sarah McClelland",
+        role: "Aerodynamics Lead",
         image: "/headshots/manav_anand.jpg",
         linkedin: "https://www.linkedin.com/in/manand222/",
       },

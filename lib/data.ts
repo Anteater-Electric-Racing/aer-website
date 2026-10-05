@@ -168,18 +168,18 @@ export const CURRENT_SPONSORS = [
 export const SUBTEAMS = [
   {
     id: "accumulator",
-    name: "Accumulator",
+    name: "Battery",
     description:
-      "The Accumulator subteam develops the physical housing, thermal solution, and the wiring for the energy storage system (ESS) that powers the vehicle from the cell level up. This team also designs and manufactures a specialized hand cart to lift the battery into the chassis of the vehicle.",
+      "The Battery subteam develops the physical housing, thermal solution, and the wiring for the energy storage system (ESS) that powers the vehicle from the cell level up. This team also designs and manufactures a specialized hand cart to lift the battery into the chassis of the vehicle.",
     groupImage: "/subteam-photos/accumulator_photo_crop.jpg",
     logo: "/subteam-logos/accumulator_patch.png",
     icon: Box,
     members: [
       {
-        name: "Camryn Wright",
-        role: "Chief Engineer, Accumulator Lead",
-        image: "/headshots/camryn_wright.jpg",
-        linkedin: "http://www.linkedin.com/in/camryn-wright/",
+        name: "Emily VanDenburgh",
+        role: "Battery Lead",
+        image: "/headshots/emily_vandenburgh.jpg",
+        linkedin: "https://www.linkedin.com/in/emily-vandenburgh/",
       },
     ],
   },

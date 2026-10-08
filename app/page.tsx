@@ -115,11 +115,11 @@ export default function HomePage() {
         <div className="flex flex-col md:flex-row gap-8 mb-16 items-end justify-between">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-bold text-vintage-navy uppercase leading-none mb-4">
-              Innovate.
+              Design it.
               <br />
-              Engineer.
+              Build it.
               <br />
-              Compete.
+              Race it.
             </h2>
             <p className="text-lg text-gray-600">
               Explore the different facets of our team, from the subteams that
@@ -147,7 +147,7 @@ export default function HomePage() {
                 <ArrowRight className="w-6 h-6 -rotate-45 group-hover:rotate-0 transition-transform text-vintage-orange" />
               </h3>
               <p className="text-gray-300 max-w-md">
-                Over 40 students across 9 specialized subteams working in
+                100+ students across 8 specialized subteams working in
                 unison.
               </p>
             </div>

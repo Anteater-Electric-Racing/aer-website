@@ -167,7 +167,48 @@ export const CURRENT_SPONSORS = [
 
 export const SUBTEAMS = [
   {
-    id: "accumulator",
+    id: "management",
+    name: "Management",
+    description:
+      "The Management subteam is responsible for ...",
+    groupImage: "/subteam-photos/suspension_photo.jpg",
+    logo: "/subteam-logos/suspension_patch.png",
+    icon: Shield,
+    members: [
+      {
+        name: "Jacob Barnett",
+        role: "Chief Mechanical Engineer",
+        image: "/headshots/jacob_barnett.jpg",
+        linkedin: "https://www.linkedin.com/in/jacob-barnett-883838214/",
+      },
+      {
+        name: "Avadi Seneviratne",
+        role: "Chief Electrical Engineer",
+        image: "/headshots/avadi_seneviratne.png",
+        linkedin: "https://www.linkedin.com/in/avadi-s/",
+      },
+      {
+        name: "Nuha Khan",
+        role: "Project Manager",
+        image: "/headshots/nuha_khan.jpg",
+        linkedin: "https://www.linkedin.com/in/nuhakhan24/",
+      },
+      {
+        name: "Rajesh Ganji",
+        role: "Project Manager",
+        image: "/headshots/rajesh_ganji.jpg",
+        linkedin: "https://www.linkedin.com/in/rajesh--ganji/",
+      },
+      {
+        name: "Katie Schmitz",
+        role: "Project Manager",
+        image: "/headshots/katie_schmitz.jpg",
+        linkedin: "https://www.linkedin.com/in/katie-schmitz-893308331/",
+      },
+    ],
+  },
+  {
+    id: "battery",
     name: "Battery",
     description:
       "The Battery subteam develops the physical housing, thermal solution, and the wiring for the energy storage system (ESS) that powers the vehicle from the cell level up. This team also designs and manufactures a specialized hand cart to lift the battery into the chassis of the vehicle.",
@@ -187,7 +228,7 @@ export const SUBTEAMS = [
     id: "aerodynamics",
     name: "Aerodynamics",
     description:
-      "The Aerodynamics subteam is responsible for the designing, manufacturing, testing and documentation of the body for the UCI electric racecar. The subteam is also responsible for the aerodynamic behavior of the vehicle, performing CFD analysis using programs such as SolidWorks and Flow Simulation.",
+      "The Aerodynamics subteam designs, builds, and tests every aerodynamic and composite structure on the car. The team also characterizes the car's aerodynamic behavior and sets downforce and drag targets to guide each design. The design group uses STAR-CCM+ CFD and ANSYS Structural FEA to optimize aerodynamic components, while the composites group uses ANSYS Composite PrepPost and NX Fibersim to balance weight, stiffness, and manufacturability.",
     groupImage: "/subteam-photos/aero_photo.jpg",
     logo: "/subteam-logos/aero_patch.png",
     icon: Wind,
@@ -195,8 +236,8 @@ export const SUBTEAMS = [
       {
         name: "Christian Klenz",
         role: "Aerodynamics Lead",
-        image: "/headshots/alexander_sadigursky.jpg",
-        linkedin: "https://www.linkedin.com/in/sadigursky/",
+        image: "/headshots/christian_klenz.jpg",
+        linkedin: "https://www.linkedin.com/in/christianklenz/",
       },
       {
         name: "Dylan Richcreek",
@@ -207,41 +248,41 @@ export const SUBTEAMS = [
       {
         name: "Sarah McClelland",
         role: "Aerodynamics Lead",
-        image: "/headshots/manav_anand.jpg",
-        linkedin: "https://www.linkedin.com/in/manand222/",
-      },
-      {
-        name: "Sergei Litovchenko",
-        role: "Lead Aerodynamics Engineer",
-        image: "/headshots/sergei_litovchenko.jpg",
-        linkedin: "https://www.linkedin.com/in/sergeil/",
+        image: "/headshots/sarah_mcclelland.jpg",
+        linkedin: "https://www.linkedin.com/in/sarahrmcclelland/",
       },
     ],
   },
   {
-    id: "chassis",
-    name: "Chassis",
+    id: "dynamics",
+    name: "Dynamics",
     description:
-      "The Chassis subteam's mission is to engineer a design that balances minimal weight with exceptional structural integrity, ensuring precise component mounting through strategic triangulation. The chassis is the foundational structural framework of the vehicle.",
+      "The Dynamics subteam designs the chassis and suspension that define the vehicle's performance. We engineer a lightweight, triangulated chassis with exceptional structural integrity and precise component mounting, paired with a reliable suspension system, including control arms, rocker arms, and wheel uprights, built to handle all dynamic scenarios.",
     groupImage: "/subteam-photos/dynamics_photo.jpg",
     logo: "/subteam-logos/chassis_patch.png",
     icon: Wrench,
     members: [
       {
-        name: "Andrew Chao",
-        role: "Chassis Lead",
-        image: "/headshots/andrew_chao.jpg",
-        linkedin: "https://www.linkedin.com/in/andrewychao/",
+        name: "Gabrielle Wang",
+        role: "Dynamics Lead",
+        image: "/headshots/gabrielle_wang.jpg",
+        linkedin: "https://www.linkedin.com/in/gabrielle-wang/",
+      },
+      {
+        name: "Isaac An",
+        role: "Dynamics Lead",
+        image: "/headshots/isaac_an.png",
+        linkedin: "https://www.linkedin.com/in/jisaacan/",
       },
       {
         name: "Bochin Tong",
-        role: "Chassis Co-Lead",
+        role: "Dynamics Lead",
         image: "/headshots/bochin_tong.jpg",
         linkedin: "https://www.linkedin.com/in/bochintong",
       },
       {
         name: "Akil Nafi",
-        role: "Chassis Co-Lead",
+        role: "Dynamics Lead",
         image: "/headshots/akil_nafi.jpg",
         linkedin: "https://www.linkedin.com/in/akil-nafi/",
       },
@@ -257,10 +298,16 @@ export const SUBTEAMS = [
     icon: CircuitBoard,
     members: [
       {
-        name: "Gabriel Schoene",
-        role: "Lead Electrical Engineer",
-        image: "/headshots/gabriel_schoene.jpg",
-        linkedin: "https://www.linkedin.com/in/gabriel-schoene-228438294",
+        name: "Rajesh Ganji",
+        role: "Electrical Engineer Lead",
+        image: "/headshots/rajesh_ganji.jpg",
+        linkedin: "https://www.linkedin.com/in/rajesh--ganji/",
+      },
+      {
+        name: "Avadi Seneviratne",
+        role: "Electrical Engineer Lead",
+        image: "/headshots/avadi_seneviratne.png",
+        linkedin: "https://www.linkedin.com/in/avadi-s/",
       },
     ],
   },
@@ -274,22 +321,10 @@ export const SUBTEAMS = [
     icon: Cpu,
     members: [
       {
-        name: "Natalie Perrochon",
-        role: "EE Project Manager",
-        image: "/headshots/natalie_perrochon.png",
-        linkedin: "https://www.linkedin.com/in/natalie-perrochon/",
-      },
-      {
-        name: "Karan Thakkar",
-        role: "Embedded Lead - Firmware",
-        image: "/headshots/karan_thakkar.jpg",
-        linkedin: "https://www.linkedin.com/in/ksthakkar/",
-      },
-      {
-        name: "Alistair Keiller",
-        role: "Embedded Lead - Data",
-        image: "/headshots/alistair_keiller.jpg",
-        linkedin: "https://www.linkedin.com/in/akeiller/",
+        name: "Anoop Koganti",
+        role: "Embedded Lead",
+        image: "/headshots/anoop_koganti.jpg",
+        linkedin: "https://www.linkedin.com/in/anoop-koganti/",
       },
     ],
   },
@@ -303,22 +338,16 @@ export const SUBTEAMS = [
     icon: User,
     members: [
       {
-        name: "Lorelei Hobbis",
+        name: "Mylie Yu",
         role: "Ergonomics Lead",
-        image: "",
-        linkedin: "",
+        image: "/headshots/mylie_yu.jpg",
+        linkedin: "https://www.linkedin.com/in/mylie-yu-4573452a6/",
       },
       {
         name: "Meera Sambhwani",
-        role: "Ergonomics Co-Lead",
+        role: "Ergonomics Lead",
         image: "/headshots/meera_sambhwani.png",
         linkedin: "https://www.linkedin.com/in/meera-sambhwani-a95bb0256/",
-      },
-      {
-        name: "Katie Schmitz",
-        role: "Ergonomics Co-Lead",
-        image: "/headshots/katie_schmitz.jpg",
-        linkedin: "https://www.linkedin.com/in/katie-schmitz-893308331/",
       },
     ],
   },
@@ -337,18 +366,6 @@ export const SUBTEAMS = [
         image: "/headshots/nuha_khan.jpg",
         linkedin: "https://www.linkedin.com/in/nuhakhan24/",
       },
-      {
-        name: "Trang Nguyen",
-        role: "Webmaster",
-        image: "/headshots/trang_nguyen.jpg",
-        linkedin: "https://www.linkedin.com/in/trangn12/",
-      },
-      {
-        name: "Anna Lee",
-        role: "Web developer",
-        image: "/headshots/anna_lee.jpg",
-        linkedin: "https://www.linkedin.com/in/anna-lee-ab7383257/",
-      },
     ],
   },
   {
@@ -361,57 +378,16 @@ export const SUBTEAMS = [
     icon: Zap,
     members: [
       {
-        name: "Jonathan Leung",
-        role: "Project Manager, Powertrain Lead",
-        image: "/headshots/jonathan_leung.jpg",
-        linkedin: "https://www.linkedin.com/in/jt-leung/",
-      },
-      {
-        name: "Pratik Palwai",
+        name: "Jacob Barnett",
         role: "Powertrain Lead",
-        image: "",
-        linkedin: "",
-      },
-    ],
-  },
-  {
-    id: "suspension",
-    name: "Suspension",
-    description:
-      "The Suspension subteam is responsible for designing not only a reliable system but a system tolerable within all dynamic scenarios. Components include control arms, rocker arms, wheel uprights and many others.",
-    groupImage: "/subteam-photos/suspension_photo.jpg",
-    logo: "/subteam-logos/suspension_patch.png",
-    icon: Shield,
-    members: [
-      {
-        name: "Vikram Repalle",
-        role: "Suspension Lead",
-        image: "/headshots/vikram_repalle.jpg",
-        linkedin: "https://www.linkedin.com/in/vikram-repalle-9744bb291/",
+        image: "/headshots/jacob_barnett.jpg",
+        linkedin: "https://www.linkedin.com/in/jacob-barnett-883838214/",
       },
       {
-        name: "Dom Serrano",
-        role: "Assistant Lead",
-        image: "",
-        linkedin: "",
-      },
-      {
-        name: "Isaac An",
-        role: "Assistant Lead",
-        image: "",
-        linkedin: "",
-      },
-      {
-        name: "Walter Ramirez",
-        role: "Brakes Lead",
-        image: "",
-        linkedin: "",
-      },
-      {
-        name: "Diego Martinez",
-        role: "Brakes Lead",
-        image: "",
-        linkedin: "",
+        name: "Ty Mitchell",
+        role: "Powertrain Lead",
+        image: "/headshots/ty_mitchell.png",
+        linkedin: "https://www.linkedin.com/in/ty-mitchell-403772238/",
       },
     ],
   },

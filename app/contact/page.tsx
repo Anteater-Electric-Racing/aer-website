@@ -38,7 +38,7 @@ export default function ContactPage() {
                     <p className="text-gray-600 mt-1 leading-relaxed">
                       University of California, Irvine
                       <br />
-                      Engineering Hall
+                      4200 Engineering Gateway
                       <br />
                       Irvine, CA 92697
                     </p>
@@ -57,10 +57,10 @@ export default function ContactPage() {
                       For general inquiries and sponsorship info:
                     </p>
                     <a
-                      href="mailto:electric.anteaterracing@gmail.com"
+                      href="mailto:anteaterelectricracing@gmail.com"
                       className="text-vintage-orange font-bold hover:underline text-lg"
                     >
-                      electric.anteaterracing@gmail.com
+                      anteaterelectricracing@gmail.com
                     </a>
                   </div>
                 </div>
@@ -89,14 +89,6 @@ export default function ContactPage() {
                 >
                   <Linkedin className="w-6 h-6" />
                 </a>
-                <a
-                  href="https://www.tiktok.com/@anteaterelectricracing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-4 bg-white shadow-md rounded-full text-vintage-navy hover:bg-vintage-orange hover:text-white transition-all hover:-translate-y-1"
-                >
-                  <Music2 className="w-6 h-6" />
-                </a>
               </div>
             </div>
           </div>
@@ -120,7 +112,7 @@ export default function ContactPage() {
             </p>
 
             <a
-              href="https://zotfunder.give.uci.edu/project/48490?clid=8e8jHk7DG1ccIi0N4emmhk&utm_campaign=site_share&utm_medium=plain&utm_source=scalefunder&utm_content=link_in_bio"
+              href="https://zotfunder.give.uci.edu/aer"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-3 w-full py-4 bg-vintage-navy text-white text-lg font-bold rounded-xl hover:bg-vintage-orange transition-all shadow-lg hover:shadow-xl"
@@ -138,14 +130,14 @@ export default function ContactPage() {
         {/* Map Section */}
         <div className="mt-20">
           <div className="w-full h-96 bg-gray-200 rounded-2xl overflow-hidden shadow-inner border-4 border-white">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.989343376378!2d-117.84429668479532!3d33.64706598071856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcde0e2a396555%3A0x9e97554900742d6!2sEngineering%20Hall!5e0!3m2!1sen!2sus!4v1645564858452!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1347.21664626097!2d-117.84027427140651!3d33.64294479832514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcde0583eea5f3%3A0x60850c89c6ad35a8!2sEngineering%20Gateway!5e1!3m2!1sen!2sus!4v1791444297823!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }} 
+            allowFullScreen
+            loading="lazy">
+            </iframe>
           </div>
         </div>
       </section>

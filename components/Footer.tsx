@@ -75,7 +75,7 @@ export function Footer() {
               <li className="flex items-start gap-3 text-gray-300">
                 <MapPin className="w-5 h-5 text-vintage-orange flex-shrink-0" />
                 <span>
-                  University of California, Irvine
+                  4200 Engineering Gateway, 
                   <br />
                   Irvine, CA 92697
                 </span>
@@ -83,10 +83,10 @@ export function Footer() {
               <li className="flex items-center gap-3 text-gray-300">
                 <Mail className="w-5 h-5 text-vintage-orange flex-shrink-0" />
                 <a
-                  href="mailto:electric.anteaterracing@gmail.com"
+                  href="mailto:anteaterelectricracing@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  electric.anteaterracing@gmail.com
+                  anteaterelectricracing@gmail.com
                 </a>
               </li>
             </ul>
@@ -115,15 +115,6 @@ export function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://www.tiktok.com/@anteaterelectricracing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 p-3 rounded-full hover:bg-vintage-orange hover:text-white transition-all"
-                aria-label="TikTok"
-              >
-                <Music2 className="w-5 h-5" />
               </a>
             </div>
           </div>

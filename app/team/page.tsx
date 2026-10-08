@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Hero } from "@/components/ui/Hero";
 import { SUBTEAMS } from "@/lib/data";
 import { cn } from "@/lib/utils";
-import { User, ArrowRight } from "lucide-react";
+import { User, ArrowRight, Linkedin} from "lucide-react";
 
 export default function TeamPage() {
   return (
@@ -57,19 +57,14 @@ export default function TeamPage() {
                     {subteam.description}
                   </p>
 
-                  <div className="flex items-center gap-2 text-vintage-orange font-bold pt-2">
-                    <subteam.icon className="w-6 h-6" />
-                    <span className="uppercase tracking-wider text-sm">
-                      Specialized Discipline
-                    </span>
-                  </div>
+                  
                 </div>
               </div>
 
               <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                 <h3 className="text-xl font-bold text-vintage-navy mb-8 flex items-center gap-3 border-b border-gray-100 pb-4">
                   <span className="w-2 h-8 bg-vintage-orange rounded-full"></span>
-                  {subteam.name} Members
+                  {subteam.name} Leads
                 </h3>
 
                 {subteam.members && subteam.members.length > 0 ? (
@@ -79,7 +74,13 @@ export default function TeamPage() {
                         key={member.name}
                         className="group flex flex-col items-center"
                       >
-                        <div className="relative w-36 h-36 mb-4 rounded-full overflow-hidden border-4 border-vintage-lightgray group-hover:border-vintage-orange transition-colors shadow-sm">
+                        <a
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${member.name} on LinkedIn`}
+                          className="relative block w-36 h-36 mb-4 rounded-full overflow-hidden border-4 border-vintage-lightgray group-hover:border-vintage-orange transition-colors shadow-sm"
+                        >
                           {member.image ? (
                             <Image
                               src={member.image}
@@ -92,7 +93,13 @@ export default function TeamPage() {
                               <User className="w-12 h-12" />
                             </div>
                           )}
-                        </div>
+
+                          {/* Hover overlay */}
+                          <div className="absolute inset-0 bg-vintage-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <Linkedin className="w-8 h-8 text-white" />
+                          </div>
+                        </a>
+
                         <h4 className="font-bold text-vintage-navy text-lg text-center leading-tight">
                           {member.name}
                         </h4>

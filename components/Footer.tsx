@@ -19,10 +19,10 @@ export function Footer() {
                 className="object-contain object-left"
               />
             </Link>
-            <p className="text-sm text-gray-300 leading-relaxed">
+            {/* <p className="text-sm text-gray-300 leading-relaxed">
               Designing, building, and racing high-performance electric vehicles
               at the University of California, Irvine.
-            </p>
+            </p> */}
           </div>
 
           {/* COLUMN 2: Quick Links */}

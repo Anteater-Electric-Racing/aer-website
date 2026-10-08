@@ -123,7 +123,7 @@ export default function HomePage() {
             </h2>
             <p className="text-lg text-gray-600">
               Explore the different facets of our team, from the subteams that
-              design every bolt to the partners who make it possible.
+              design every inch of the car to the partners who make it possible.
             </p>
           </div>
         </div>

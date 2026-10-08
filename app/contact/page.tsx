@@ -104,12 +104,12 @@ export default function ContactPage() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
+            {/* <p className="text-gray-600 leading-relaxed mb-8">
               Your contributions directly fund the materials, tools, and
               competition fees needed to build our electric race car. Help us
               engineer the future of sustainable motorsports by donating through
               our official UCI ZotFunder page.
-            </p>
+            </p> */}
 
             <a
               href="https://zotfunder.give.uci.edu/aer"

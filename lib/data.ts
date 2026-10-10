@@ -170,7 +170,7 @@ export const SUBTEAMS = [
     id: "management",
     name: "Management",
     description:
-      "The Management subteam is responsible for ...",
+      "Our team's management is responsible for overseeing the engineering design process, ensuring integration, maintaining adherence to deadlines, and managing logistics for competitions and other events.",
     groupImage: "/subteam-photos/suspension_photo.jpg",
     logo: "/subteam-logos/suspension_patch.png",
     icon: Shield,
@@ -241,7 +241,7 @@ export const SUBTEAMS = [
       },
       {
         name: "Dylan Richcreek",
-        role: "Aerodynamics Lead",
+        role: "Aerodynamics & Composites Lead",
         image: "/headshots/dylan_gene_richcreek.jpg",
         linkedin: "https://www.linkedin.com/in/dylan-richcreek-3a40062a6/",
       },

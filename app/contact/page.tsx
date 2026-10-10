@@ -15,7 +15,7 @@ export default function ContactPage() {
       <Hero
         title="Contact Us"
         subtitle="Connect with UCI Formula SAE"
-        backgroundImage="/images/MZdramaticShot.jpg"
+        backgroundImage="/images/MZdramaticShotCROP.jpg"
       />
 
       <section className="py-20 container mx-auto px-4">

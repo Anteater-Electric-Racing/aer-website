@@ -31,10 +31,7 @@ export default function HomePage() {
               The Future.
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-2xl font-light leading-relaxed mb-8">
-              We are Anteater Electric Racing. A collective of engineers,
-              designers, and innovators building championship-winning electric
-              vehicles.
-            </p>
+              We are Anteater Electric Racing. Our team is dedicated to advancing collegiate electric racing and providing our 80+ students with valuable educational experiences.             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/about"

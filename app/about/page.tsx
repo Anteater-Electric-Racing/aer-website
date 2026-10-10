@@ -15,7 +15,7 @@ export default function AboutPage() {
   return (
     <main className="flex flex-col min-h-screen bg-vintage-white">
       <Hero
-        title="About UCI Formula SAE"
+        title="About UCI Anteater Electric Racing"
         subtitle="Driving the Future of Electric Racing"
         backgroundImage="/images/staring_crop.jpg"
       />
@@ -27,7 +27,7 @@ export default function AboutPage() {
             Our Mission
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed">
-            At UCI Formula SAE, we are dedicated to designing, building, and
+            At UCI Anteater Electric Racing, we are dedicated to designing, building, and
             racing cutting-edge electric vehicles. Our mission is to push the
             boundaries of sustainable automotive technology while providing
             hands-on engineering experience to students passionate about

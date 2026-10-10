@@ -11,7 +11,7 @@ export default function HomePage() {
       <section className="relative h-[calc(100vh-5rem)] min-h-[600px] flex items-end pb-12 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/RacingAction.jpg"
+            src="/images/RacingActionCROP2.jpg"
             alt="UCI Electric Racing Car"
             fill
             className="object-cover object-center"

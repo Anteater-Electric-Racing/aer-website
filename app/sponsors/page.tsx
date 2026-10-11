@@ -4,15 +4,12 @@ import { Hero } from "@/components/ui/Hero";
 import { SPONSOR_TIERS, CURRENT_SPONSORS } from "@/lib/data";
 import { Check, ArrowRight, Mail } from "lucide-react";
 import type { SponsorTier } from "@/lib/data";
-const TIER_STYLES: Record<
-  SponsorTier,
-  { label: string; grow: string; bar: string; text: string }
-> = {
-  Title:    { label: "Title Partner", grow: "group-hover:scale-[1.18]", bar: "bg-amber-500",  text: "text-amber-600" },
-  Platinum: { label: "Platinum",      grow: "group-hover:scale-[1.14]", bar: "bg-slate-500",  text: "text-slate-600" },
-  Gold:     { label: "Gold",          grow: "group-hover:scale-[1.12]", bar: "bg-yellow-500", text: "text-yellow-600" },
-  Silver:   { label: "Silver",        grow: "group-hover:scale-[1.10]", bar: "bg-gray-400",   text: "text-gray-500" },
-  Partner:  { label: "Partner",       grow: "group-hover:scale-[1.08]", bar: "bg-vintage-navy", text: "text-vintage-navy" },
+const TIER_STYLES: Record<SponsorTier, { grow: string; glow: string }> = {
+  Title:    { grow: "group-hover:scale-[1.14]", glow: "group-hover:drop-shadow-[0_8px_16px_rgba(0,0,0,0.28)]" },
+  Platinum: { grow: "group-hover:scale-[1.12]", glow: "group-hover:drop-shadow-[0_7px_14px_rgba(0,0,0,0.24)]" },
+  Gold:     { grow: "group-hover:scale-[1.10]", glow: "group-hover:drop-shadow-[0_6px_12px_rgba(0,0,0,0.20)]" },
+  Silver:   { grow: "group-hover:scale-[1.08]", glow: "group-hover:drop-shadow-[0_5px_10px_rgba(0,0,0,0.16)]" },
+  Partner:  { grow: "group-hover:scale-[1.06]", glow: "group-hover:drop-shadow-[0_4px_8px_rgba(0,0,0,0.12)]" },
 };
 export default function SponsorsPage() {
   return (
@@ -101,41 +98,25 @@ export default function SponsorsPage() {
             Current Partners
           </h2>
 
-          <div className="flex flex-wrap justify-center gap-x-12 gap-y-12">
+          <div className="flex flex-wrap justify-center gap-x-12 gap-y-8">
             {CURRENT_SPONSORS.map((sponsor) => {
-              const style = TIER_STYLES[sponsor.tier] ?? TIER_STYLES.Partner;
+              const style = TIER_STYLES[sponsor.tier];
 
-              // everything that sits inside the link (or plain div)
-              const content = (
-                <>
-                  {/* the logo: grows more for higher tiers */}
-                  <div
-                    className={`relative h-24 w-44 transition-transform duration-300 ${style.grow}`}
-                  >
-                    <Image
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      fill
-                      style={{ transform: `scale(${sponsor.scale ?? 1})` }}
-                      className="object-contain grayscale opacity-70 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100"
-                    />
-                  </div>
-
-                  {/* colored bar that slides out from the center */}
-                  <span
-                    className={`absolute left-0 right-0 top-full mt-3 h-0.5 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${style.bar}`}
+              const logo = (
+                <div
+                  className={`relative h-24 w-44 transition-transform duration-300 ${style.grow}`}
+                >
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    fill
+                    style={{ transform: `scale(${sponsor.scale ?? 1})` }}
+                    className={`object-contain grayscale opacity-70 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 ${style.glow}`}
                   />
-
-                  {/* tier name that fades in */}
-                  <span
-                    className={`pointer-events-none absolute left-0 right-0 top-full mt-5 text-center text-xs font-bold uppercase tracking-widest opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${style.text}`}
-                  >
-                    {style.label}
-                  </span>
-                </>
+                </div>
               );
 
-              const wrapperClass = "group relative block";
+              const wrapperClass = "group block";
 
               return sponsor.url ? (
                 <a
@@ -146,11 +127,11 @@ export default function SponsorsPage() {
                   aria-label={sponsor.name}
                   className={wrapperClass}
                 >
-                  {content}
+                  {logo}
                 </a>
               ) : (
                 <div key={sponsor.name} className={wrapperClass}>
-                  {content}
+                  {logo}
                 </div>
               );
             })}

@@ -90,20 +90,36 @@ export default function SponsorsPage() {
           <h2 className="text-3xl font-bold text-center text-vintage-navy mb-12 uppercase tracking-wider">
             Current Partners
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center">
-            {CURRENT_SPONSORS.map((sponsor) => (
-              <div
-                key={sponsor.name}
-                className="group relative w-40 h-24 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
-              >
-                <Image
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            ))}
+
+          {/* flex + justify-center centers the last row */}
+          <div className="flex flex-wrap justify-center gap-6">
+            {CURRENT_SPONSORS.map((sponsor) => {
+              const logo = (
+                <div className="group relative h-28 w-48 rounded-xl bg-white shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    fill
+                    className="object-contain p-4 grayscale opacity-70 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100"
+                  />
+                </div>
+              );
+
+              // link if there's a url, plain logo if not
+              return sponsor.url ? (
+                <a
+                  key={sponsor.name}
+                  href={sponsor.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={sponsor.name}
+                >
+                  {logo}
+                </a>
+              ) : (
+                <div key={sponsor.name}>{logo}</div>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -91,74 +91,169 @@ export const CURRENT_SPONSORS = [
     name: "Welsh Advisors",
     tier: "Title",
     logo: "/sponsor-logos/welshadvisors_logo.png",
+    url: "https://www.welshadvisors.com/",
   },
-  {
+  { //Not sure if this sponsor is for this year
     name: "Parker",
     tier: "Platinum",
     logo: "/sponsor-logos/parkerhannifin_logo.png",
+    url: "https://www.parker.com/us/en/home.html",
   },
   {
     name: "Airtech",
     tier: "Platinum",
     logo: "/sponsor-logos/airtech_logo.jpg",
+    url: "https://airtech.com/",
   },
   {
     name: "Composites One",
     tier: "Platinum",
     logo: "/sponsor-logos/compositesone_logo.png",
+    url: "https://compositesone.com/en-us",
   },
-  {
+  { //Not sure if this sponsor is for this year
     name: "Curbell Plastics",
     tier: "Platinum",
     logo: "/sponsor-logos/curbell_logo.png",
+    url: "https://www.curbell.com/",
   },
-  { name: "Evonik", tier: "Gold", logo: "/sponsor-logos/evonik_logo.png" },
   {
+    name: "Evonik",
+    tier: "Gold",
+    logo: "/sponsor-logos/evonik_logo.svg",
+    url: "https://www.evonik.com/en.html",
+  },
+  { //Not sure if this sponsor is for this year
     name: "PEC Tools",
     tier: "Silver",
     logo: "/sponsor-logos/pectools_logo.jpeg",
+    url: "https://www.pectools.com/",
+  }, //Not sure if this sponsor is for this year
+  { name: "Osh Cut", 
+    tier: "Silver", 
+    logo: "/sponsor-logos/oshcut_logo.png",
+    url: "https://www.oshcut.com/",
   },
-  { name: "Osh Cut", tier: "Silver", logo: "/sponsor-logos/oshcut_logo.png" },
   {
     name: "ACP Composites",
     tier: "Silver",
     logo: "/sponsor-logos/acpcomposites_logo.png",
+    url: "https://acpcomposites.com/",
   },
   {
     name: "Coastal Enterprises",
     tier: "Silver",
     logo: "/sponsor-logos/coastalenterprisesprecisionboard_logo.png",
+    url: "https://precisionboard.com/",
   },
   {
     name: "Textile Products Inc.",
     tier: "Silver",
     logo: "/sponsor-logos/textileproductsinc_logo.png",
+    url: "https://www.textileproducts.com/en/",
   },
-  {
+  { //Not sure if this sponsor is for this year
     name: "Perficient",
     tier: "Partner",
     logo: "/sponsor-logos/perficient_logo.jpg",
+    url: "https://www.perficient.com/",
   },
-  {
+  { //Not sure if this sponsor is for this year
     name: "Murata Electronics",
     tier: "Partner",
     logo: "/sponsor-logos/murataelectronics_logo.png",
+    url: "https://www.murata.com/en-us",
   },
-  {
+  { //Not sure if this sponsor is for this year
     name: "SendCutSend",
     tier: "Partner",
     logo: "/sponsor-logos/sendcutsend_logo.png",
+    url: "https://sendcutsend.com/",
   },
   {
     name: "Performance Composites",
     tier: "Partner",
     logo: "/sponsor-logos/performancecomposites_logo.png",
+    url: "https://performancecomposites.com/",
   },
-    {
+  {
     name: "Mercury",
-    tier: "Partner",
+    tier: "Gold",
     logo: "/sponsor-logos/Mercury_Logo_FullColor_CMYK.png",
+    url: "https://www.mrcy.com/",
   },
+  {
+    name: "Automotive Entertainment OC",
+    tier: "Silver",
+    logo: "/sponsor-logos/automotive_entertainment_oc_logo.png",
+    url: "https://automotiveentertainmentoc.com/",
+  },
+  {
+    name: "Bender",
+    tier: "Partner",
+    logo: "/sponsor-logos/bender_logo.svg",
+    url: "https://www.benderinc.com/",
+  },
+  {
+    name: "Milspec Wiring",
+    tier: "Partner",
+    logo: "/sponsor-logos/milspecwiring_logo.png",
+    url: "https://www.milspecwiring.com/",
+  },
+  {
+    name: "Data Electronic Services",
+    tier: "Partner",
+    logo: "/sponsor-logos/data_electronic_services_logo.png",
+    url: "https://despcb.com/",
+  },
+  {
+    name: "HiMAC",
+    tier: "Partner",
+    logo: "/sponsor-logos/himac_logo.png",
+    url: "https://himac2.uci.edu/",
+  },
+  /*{ The following are all N/A status, can be updated when taken off N/A
+    name: "FibreGlast",
+    tier: "Partner",
+    logo: "/sponsor-logos/fibreglast_logo.jpg",
+    url: "https://www.fibreglast.com/",
+  },
+  {
+    name: "Aircraft Spruce",
+    tier: "Partner",
+    logo: "/sponsor-logos/aircraft_spruce_logo.png",
+    url: "https://www.aircraftspruce.com/",
+  },
+  {
+    name: "Chem-Trend",
+    tier: "Partner",
+    logo: "/sponsor-logos/chemtrend_logo.png",
+    url: "https://chemtrend.com/",
+  },
+  {
+    name: "Hawkeye Industries",
+    tier: "Partner",
+    logo: "/sponsor-logos/hawkeye_industries_logo.png",
+    url: "https://hawkeyeind.com/",
+  },
+  {
+    name: "Easy Composites",
+    tier: "Partner",
+    logo: "/sponsor-logos/easy_composites_logo.png",
+    url: "https://www.easycomposites.us/",
+  },
+  {
+    name: "Omni Powertrain Technologies",
+    tier: "Gold",
+    logo: "/sponsor-logos/omni_powertrain_technologies_logo.png",
+    url: "https://www.omnipowertrain.com/",
+  },
+  {
+    name: "Entropy Resins",
+    tier: "Partner",
+    logo: "/sponsor-logos/entropy_resins_logo.png",
+    url: "https://entropyresins.com/",
+  },*/
 ];
 
 // =========================================

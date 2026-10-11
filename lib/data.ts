@@ -86,12 +86,23 @@ export const SPONSOR_TIERS = [
 // CURRENT SPONSORS
 // =========================================
 
-export const CURRENT_SPONSORS = [
+export type SponsorTier = "Title" | "Platinum" | "Gold" | "Silver" | "Partner";
+
+export interface Sponsor {
+  name: string;
+  tier: SponsorTier;
+  logo: string;
+  url?: string;
+  scale?: number; // optional: enlarges small-looking logos
+}
+
+export const CURRENT_SPONSORS: Sponsor[] = [
   {
     name: "Welsh Advisors",
     tier: "Title",
     logo: "/sponsor-logos/welshadvisors_logo.png",
     url: "https://www.welshadvisors.com/",
+    scale: 1.8,
   },
   { //Not sure if this sponsor is for this year
     name: "Parker",

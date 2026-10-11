@@ -3,7 +3,17 @@ import Link from "next/link";
 import { Hero } from "@/components/ui/Hero";
 import { SPONSOR_TIERS, CURRENT_SPONSORS } from "@/lib/data";
 import { Check, ArrowRight, Mail } from "lucide-react";
-
+import type { SponsorTier } from "@/lib/data";
+const TIER_STYLES: Record<
+  SponsorTier,
+  { label: string; grow: string; bar: string; text: string }
+> = {
+  Title:    { label: "Title Partner", grow: "group-hover:scale-[1.18]", bar: "bg-amber-500",  text: "text-amber-600" },
+  Platinum: { label: "Platinum",      grow: "group-hover:scale-[1.14]", bar: "bg-slate-500",  text: "text-slate-600" },
+  Gold:     { label: "Gold",          grow: "group-hover:scale-[1.12]", bar: "bg-yellow-500", text: "text-yellow-600" },
+  Silver:   { label: "Silver",        grow: "group-hover:scale-[1.10]", bar: "bg-gray-400",   text: "text-gray-500" },
+  Partner:  { label: "Partner",       grow: "group-hover:scale-[1.08]", bar: "bg-vintage-navy", text: "text-vintage-navy" },
+};
 export default function SponsorsPage() {
   return (
     <main className="flex flex-col min-h-screen bg-vintage-white">
@@ -91,21 +101,42 @@ export default function SponsorsPage() {
             Current Partners
           </h2>
 
-          {/* flex + justify-center centers the last row */}
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-x-12 gap-y-12">
             {CURRENT_SPONSORS.map((sponsor) => {
-              const logo = (
-                <div className="group relative h-28 w-48 rounded-xl bg-white shadow-sm transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                  <Image
-                    src={sponsor.logo}
-                    alt={sponsor.name}
-                    fill
-                    className="object-contain p-4 grayscale opacity-70 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100"
+              const style = TIER_STYLES[sponsor.tier] ?? TIER_STYLES.Partner;
+
+              // everything that sits inside the link (or plain div)
+              const content = (
+                <>
+                  {/* the logo: grows more for higher tiers */}
+                  <div
+                    className={`relative h-24 w-44 transition-transform duration-300 ${style.grow}`}
+                  >
+                    <Image
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      fill
+                      style={{ transform: `scale(${sponsor.scale ?? 1})` }}
+                      className="object-contain grayscale opacity-70 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100"
+                    />
+                  </div>
+
+                  {/* colored bar that slides out from the center */}
+                  <span
+                    className={`absolute left-0 right-0 top-full mt-3 h-0.5 origin-center scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${style.bar}`}
                   />
-                </div>
+
+                  {/* tier name that fades in */}
+                  <span
+                    className={`pointer-events-none absolute left-0 right-0 top-full mt-5 text-center text-xs font-bold uppercase tracking-widest opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${style.text}`}
+                  >
+                    {style.label}
+                  </span>
+                </>
               );
 
-              // link if there's a url, plain logo if not
+              const wrapperClass = "group relative block";
+
               return sponsor.url ? (
                 <a
                   key={sponsor.name}
@@ -113,11 +144,14 @@ export default function SponsorsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={sponsor.name}
+                  className={wrapperClass}
                 >
-                  {logo}
+                  {content}
                 </a>
               ) : (
-                <div key={sponsor.name}>{logo}</div>
+                <div key={sponsor.name} className={wrapperClass}>
+                  {content}
+                </div>
               );
             })}
           </div>

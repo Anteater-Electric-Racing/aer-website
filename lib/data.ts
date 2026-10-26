@@ -425,9 +425,9 @@ export const SUBTEAMS = [
   },
   {
     id: "embedded",
-    name: "Embedded",
+    name: "Embedded Systems",
     description:
-      "The Embedded subteam is responsible for all the software and firmware development on the car. Embedded members will be using various microcontrollers to collect data from across the car, control the motor output and ensure that the car is safely and properly functioning.",
+      "The Embedded Systems subteam is responsible for developing the firmware and electronic control systems that enable our electric race car to operate safely, efficiently, and reliably. We focus on developing real-time control algorithms to maximize vehicle performance. Our team also integrates sensors, battery management systems, and motor controllers through CAN communication, allowing critical vehicle components to communicate seamlessly. Beyond software development, we design and validate custom PCBs, implement safety-critical state machines, and develop telemetry systems for real-time vehicle monitoring and diagnostics. Through continuous testing, debugging, and innovation, our goal is to build robust embedded systems that optimize vehicle performance while ensuring reliability and safety throughout FSAE competition.",
     groupImage: "/subteam-photos/embedded_photo.jpg",
     logo: "/subteam-logos/embedded_patch.png",
     icon: Cpu,
@@ -484,7 +484,7 @@ export const SUBTEAMS = [
     id: "powertrain",
     name: "Powertrain",
     description:
-      "The Powertrain subteam manages the driveline system, which is composed of a DC brushless motor, motor controller, differential, and axles. The subteam also designs and builds the motor controller apparatus to monitor and safely supply the motors with energy from the battery system.",
+      "The Powertrain subteam is responsible for designing, manufacturing, and integrating the systems that transfer power from the motor to the wheels. Our car utilizes a three-phase AC axial-flux Permanent Magnet Synchronous Motor (PMSM) controlled by a high-voltage inverter. We work on the motor, inverter, differential, chain drive, mounting systems, and cooling system, with a strong focus on component packaging and integration within the chassis. Our goal is to optimize performance, efficiency, reliability, and serviceability while meeting the demands of FSAE competition.",
     groupImage: "/subteam-photos/powertrain_photo.jpg",
     logo: "/subteam-logos/powertrain_patch.png",
     icon: Zap,

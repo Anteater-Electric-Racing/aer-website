@@ -133,7 +133,7 @@ export default function HomePage() {
             className="group relative md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden bg-gray-900 min-h-[300px]"
           >
             <Image
-              src="/images/socalshootout_team.jpg"
+              src="/images/TeamPhotoMIS.jpg"
               alt="Our Team"
               fill
               className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-60"

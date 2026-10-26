@@ -156,7 +156,7 @@ export default function HomePage() {
             className="group relative rounded-2xl overflow-hidden bg-vintage-navy min-h-[250px]"
           >
             <Image
-              src="/images/socalshootout_carempty_crop.jpg"
+              src="/images/Celebration.jpg"
               alt="Our Team"
               fill
               className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-60"

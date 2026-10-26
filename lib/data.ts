@@ -223,6 +223,11 @@ export const CURRENT_SPONSORS: Sponsor[] = [
     logo: "/sponsor-logos/himac_logo.png",
     url: "https://himac2.uci.edu/",
   },
+    name: "The Fugate Family",
+    tier: "Platinum",
+    logo: "/sponsor-logos/fugate_family_logo.jpg",
+    url: "",
+  }
   /*{ The following are all N/A status, can be updated when taken off N/A
     name: "FibreGlast",
     tier: "Partner",

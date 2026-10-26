@@ -226,7 +226,7 @@ export const CURRENT_SPONSORS: Sponsor[] = [
   {
     name: "The Fugate Family",
     tier: "Platinum",
-    logo: "/sponsor-logos/fugate_family_logo.jpg",
+    logo: "/sponsor-logos/fugate_family_logo.png",
     url: "",
   }
   /*{ The following are all N/A status, can be updated when taken off N/A

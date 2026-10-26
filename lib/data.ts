@@ -324,7 +324,7 @@ export const SUBTEAMS = [
     name: "Battery",
     description:
       "The Battery subteam develops the physical housing, thermal solution, and the wiring for the energy storage system (ESS) that powers the vehicle from the cell level up. This team also designs and manufactures a specialized hand cart to lift the battery into the chassis of the vehicle.",
-    groupImage: "/subteam-photos/accumulator_photo_crop.jpg",
+    groupImage: "/subteam-photos/2025Battery.jpg",
     logo: "/subteam-logos/accumulator_patch.png",
     icon: Box,
     members: [
@@ -341,7 +341,7 @@ export const SUBTEAMS = [
     name: "Aerodynamics",
     description:
       "The Aerodynamics subteam designs, builds, and tests every aerodynamic and composite structure on the car. The team also characterizes the car's aerodynamic behavior and sets downforce and drag targets to guide each design. The design group uses STAR-CCM+ CFD and ANSYS Structural FEA to optimize aerodynamic components, while the composites group uses ANSYS Composite PrepPost and NX Fibersim to balance weight, stiffness, and manufacturability.",
-    groupImage: "/subteam-photos/aero_photo.jpg",
+    groupImage: "/subteam-photos/2025Aero.jpg",
     logo: "/subteam-logos/aero_patch.png",
     icon: Wind,
     members: [
@@ -370,22 +370,10 @@ export const SUBTEAMS = [
     name: "Dynamics",
     description:
       "The Dynamics subteam designs the chassis and suspension that define the vehicle's performance. We engineer a lightweight, triangulated chassis with exceptional structural integrity and precise component mounting, paired with a reliable suspension system, including control arms, rocker arms, and wheel uprights, built to handle all dynamic scenarios.",
-    groupImage: "/subteam-photos/dynamics_photo.jpg",
+    groupImage: "/subteam-photos/2025Dynamics.jpg",
     logo: "/subteam-logos/chassis_patch.png",
     icon: Wrench,
     members: [
-      {
-        name: "Gabrielle Wang",
-        role: "Dynamics Lead",
-        image: "/headshots/gabrielle_wang.jpg",
-        linkedin: "https://www.linkedin.com/in/gabrielle-wang/",
-      },
-      {
-        name: "Isaac An",
-        role: "Dynamics Lead",
-        image: "/headshots/isaac_an.png",
-        linkedin: "https://www.linkedin.com/in/jisaacan/",
-      },
       {
         name: "Bochin Tong",
         role: "Dynamics Lead",
@@ -402,22 +390,22 @@ export const SUBTEAMS = [
   },
   {
     id: "electronics",
-    name: "Electronics",
+    name: "electrical",
     description:
-      "The Electronics subteam is responsible for designing, implementing, and optimizing the electrical systems of the vehicle. This includes managing high-voltage power distribution and low-voltage controls to ensure efficient and reliable operation of an electric race car.",
-    groupImage: "/subteam-photos/electronics_photo.jpg",
+      "The Electrical subteam is responsible for designing, implementing, and optimizing the electrical systems of the vehicle. This includes managing high-voltage power distribution and low-voltage controls to ensure efficient and reliable operation of an electric race car.",
+    groupImage: "/subteam-photos/2025Electrical.jpg",
     logo: "/subteam-logos/electronics_patch.png",
     icon: CircuitBoard,
     members: [
       {
         name: "Rajesh Ganji",
-        role: "Electrical Engineer Lead",
+        role: "Electrical Project Manager",
         image: "/headshots/rajesh_ganji.jpg",
         linkedin: "https://www.linkedin.com/in/rajesh--ganji/",
       },
       {
         name: "Avadi Seneviratne",
-        role: "Electrical Engineer Lead",
+        role: "Chief Electrical Engineer",
         image: "/headshots/avadi_seneviratne.png",
         linkedin: "https://www.linkedin.com/in/avadi-s/",
       },
@@ -428,7 +416,7 @@ export const SUBTEAMS = [
     name: "Embedded Systems",
     description:
       "The Embedded Systems subteam is responsible for developing the firmware and electronic control systems that enable our electric race car to operate safely, efficiently, and reliably. We focus on developing real-time control algorithms to maximize vehicle performance. Our team also integrates sensors, battery management systems, and motor controllers through CAN communication, allowing critical vehicle components to communicate seamlessly. Beyond software development, we design and validate custom PCBs, implement safety-critical state machines, and develop telemetry systems for real-time vehicle monitoring and diagnostics. Through continuous testing, debugging, and innovation, our goal is to build robust embedded systems that optimize vehicle performance while ensuring reliability and safety throughout FSAE competition.",
-    groupImage: "/subteam-photos/embedded_photo.jpg",
+    groupImage: "/subteam-photos/2025Embed.jpg",
     logo: "/subteam-logos/embedded_patch.png",
     icon: Cpu,
     members: [
@@ -445,7 +433,7 @@ export const SUBTEAMS = [
     name: "Ergonomics",
     description:
       "The Ergonomics subteam is responsible for the design, manufacturing, testing, and complete documentation of the EV's brake system, pedal assemblies, driver seat, seatbelt harness, and steering system.",
-    groupImage: "/subteam-photos/ergo_photo.jpg",
+    groupImage: "/subteam-photos/2025Ergo.jpg",
     logo: "/subteam-logos/ergo_patch.png",
     icon: User,
     members: [
@@ -468,7 +456,7 @@ export const SUBTEAMS = [
     name: "Operations & Outreach",
     description:
       "The Operations and Outreach subteam is responsible for ensuring that the technical and non-technical aspects of the project are well-coordinated. This team also manages the project’s exposure through social media, project website, and networking.",
-    groupImage: "/subteam-photos/o2_photo.jpg",
+    groupImage: "/subteam-photos/2025o2.jpg",
     logo: "/subteam-logos/o2_patch.png",
     icon: Briefcase,
     members: [
@@ -485,7 +473,7 @@ export const SUBTEAMS = [
     name: "Powertrain",
     description:
       "The Powertrain subteam is responsible for designing, manufacturing, and integrating the systems that transfer power from the motor to the wheels. Our car utilizes a three-phase AC axial-flux Permanent Magnet Synchronous Motor (PMSM) controlled by a high-voltage inverter. We work on the motor, inverter, differential, chain drive, mounting systems, and cooling system, with a strong focus on component packaging and integration within the chassis. Our goal is to optimize performance, efficiency, reliability, and serviceability while meeting the demands of FSAE competition.",
-    groupImage: "/subteam-photos/powertrain_photo.jpg",
+    groupImage: "/subteam-photos/2025Powertrain.jpg",
     logo: "/subteam-logos/powertrain_patch.png",
     icon: Zap,
     members: [

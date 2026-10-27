@@ -11,7 +11,7 @@ export default function TeamPage() {
       <Hero
         title="Our Team"
         subtitle="Meet the Engineers Behind the Machine"
-        backgroundImage="/images/2025fullTeam.jpg"
+        backgroundImage="/subteam-photos/2025fullTeam.jpg"
       />
 
       {/* Main Content Loop */}

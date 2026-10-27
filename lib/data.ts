@@ -283,7 +283,7 @@ export const SUBTEAMS = [
     name: "Management",
     description:
       "Our team's management is responsible for overseeing the engineering design process, ensuring integration, maintaining adherence to deadlines, and managing logistics for competitions and other events.",
-    groupImage: "/subteam-photos/suspension_photo.jpg",
+    groupImage: "/subteam-photos/2025mgmt.jpg",
     logo: "/subteam-logos/suspension_patch.png",
     icon: Shield,
     members: [
@@ -323,7 +323,7 @@ export const SUBTEAMS = [
     id: "battery",
     name: "Battery",
     description:
-      "The Battery subteam develops the physical housing, thermal solution, and the wiring for the energy storage system (ESS) that powers the vehicle from the cell level up. This team also designs and manufactures a specialized hand cart to lift the battery into the chassis of the vehicle.",
+      "The Battery subteam develops the physical housing, thermal solution, and wiring for the energy storage system (ESS) that powers the vehicle from the cell level up. The team is responsible for designing, manufacturing, and integrating the battery pack with the overall vehicle, ensuring it can safely and reliably deliver the power needed to perform on track.",
     groupImage: "/subteam-photos/2025Battery.jpg",
     logo: "/subteam-logos/accumulator_patch.png",
     icon: Box,
@@ -369,7 +369,7 @@ export const SUBTEAMS = [
     id: "dynamics",
     name: "Dynamics",
     description:
-      "The Dynamics subteam designs the chassis and suspension that define the vehicle's performance. We engineer a lightweight, triangulated chassis with exceptional structural integrity and precise component mounting, paired with a reliable suspension system, including control arms, rocker arms, and wheel uprights, built to handle all dynamic scenarios.",
+      "The Dynamics subteam is responsible for designing and optimizing the vehicle’s chassis and suspension to maximize performance, structural integrity, and reliability. Chassis is responsible for designing and developing the vehicle’s structural frame, balancing lightweight construction with high torsional rigidity, stiffness, and structural integrity. Through CAD modeling, structural analysis, and physical testing, the team optimizes chassis geometry and material selection while ensuring proper packaging and integration of components across all subteams. The goal is to create a lightweight, rigid, and manufacturable foundation that supports the performance of the entire vehicle. Suspension develops the systems that connect the vehicle to the road, optimizing suspension and steering geometry, wheel assemblies, and braking systems to maximize handling, traction, and overall vehicle performance. Through iterative design, testing, and tuning, the team works to extract every bit of performance from the car.",
     groupImage: "/subteam-photos/2025Dynamics.jpg",
     logo: "/subteam-logos/chassis_patch.png",
     icon: Wrench,
@@ -432,7 +432,7 @@ export const SUBTEAMS = [
     id: "ergonomics",
     name: "Ergonomics",
     description:
-      "The Ergonomics subteam is responsible for the design, manufacturing, testing, and complete documentation of the EV's brake system, pedal assemblies, driver seat, seatbelt harness, and steering system.",
+      "The Ergonomics subteam is responsible for everything that connects the driver to the car, from the moment the driver straps in to the moment they hit the track. The team designs, manufactures, and integrates critical driver-interface components, including custom seats, pedal boxes, harness systems, headrests, firewalls, and floor closeouts. By balancing driver comfort, safety, and performance, the team ensures that every component fits the driver, fits the car, and meets FSAE regulations. Through CAD, FEA, and hands-on fabrication, the team develops lightweight, reliable, and rules-compliant designs tailored to the drivers. The team’s goal is to optimize driver safety, ergonomics, and control while ensuring seamless integration within the chassis and meeting the other demands of the competition.",
     groupImage: "/subteam-photos/2025Ergo.jpg",
     logo: "/subteam-logos/ergo_patch.png",
     icon: User,
